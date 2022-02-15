@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 app.use(express.json({extended:false}));
-app.use('/users',require('./routers/user'));
+app.use('/api/users',require('./routers/user'));
 
 
 /*app.get('/',(req,res)=>{
